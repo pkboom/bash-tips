@@ -110,3 +110,15 @@ Avoid prompting the user for input of any kind. If a pass‐word is required for
 `true` a program that instantly exits with a successful exit code.'do nothing, successfully'
 
 `false` a program that exits with an unsuccessful exit code. 'do nothing, unsuccessfully'
+
+```sh
+wget -c http://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.tar.gz -O - | tar -xz
+```
+
+`-c` continues an incomplete download.
+
+`-O` specifies a file to which the documents is written, and here we use `-`, meaning it will written to standard output.
+
+`-x` enables extraction of archive files.
+
+`-z` decompresses.
